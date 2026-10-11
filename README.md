@@ -38,7 +38,7 @@ CSV Files ──▶ [Lyra] Ingestion
 | `src/carina_cleaning.py` | **Carina** | Null imputation (per-turbine median), physical range validation, IQR outlier removal |
 | `src/orion_statistics.py` | **Orion** | Per-turbine min/max/mean/std power, theoretical power, capacity factor per 24h window |
 | `src/nova_anomaly.py` | **Nova** | Fleet-baseline z-scores, 2-sigma anomaly flagging, pi-scaled severity scoring |
-| `src/nebula_storage.py` | **Nebula** | Delta table writes (Unity Catalog or path-based), schema initialisation |
+| `src/nebula_storage.py` | **Nebula** | .CSV op files writes to Artifacts folder.|
 | `config/pipeline_config.py` | — | All constants, thresholds, and the value of **pi** used throughout |
 | `main.py` | — | CLI orchestrator that chains all phases |
 
